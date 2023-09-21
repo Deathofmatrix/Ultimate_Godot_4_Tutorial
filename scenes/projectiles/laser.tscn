@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcjpaih4ruk5h"]
+
+[ext_resource type="Script" path="res://scenes/projectiles/laser.gd" id="1_asx7b"]
+[ext_resource type="Texture2D" uid="uid://dw6t6cx01s03g" path="res://graphics/projectiles/blue.png" id="1_vk2cs"]
+[ext_resource type="Texture2D" uid="uid://b2pfd1oiw3jq3" path="res://graphics/lights/textures/circle.png" id="3_fyp2x"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j20m8"]
+radius = 7.0
+height = 116.0
+
+[node name="Laser" type="Area2D"]
+collision_layer = 8
+collision_mask = 7
+script = ExtResource("1_asx7b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 23)
+texture = ExtResource("1_vk2cs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_j20m8")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0, -51)
+color = Color(0.414063, 0.777344, 0.863281, 1)
+texture = ExtResource("3_fyp2x")
