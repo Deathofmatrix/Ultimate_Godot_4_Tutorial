@@ -128,8 +128,9 @@ layer_1/tile_data = PackedInt32Array(-65539, 131072, 0, -65540, 65536, 0, -65541
 position = Vector2(-5093, 5815)
 rotation = -1.5708
 
-[node name="SteamVent" parent="Ground/House" instance=ExtResource("6_2gdpj")]
-position = Vector2(5174, 6942)
+[node name="SteamVent" parent="Ground" instance=ExtResource("6_2gdpj")]
+position = Vector2(1848.98, 640.975)
+rotation = -1.5708
 
 [node name="Moss1" type="Sprite2D" parent="Ground"]
 position = Vector2(-1064, 485)
@@ -182,8 +183,10 @@ texture = ExtResource("3_kbdgq")
 
 [node name="Gate" parent="." instance=ExtResource("3_belet")]
 position = Vector2(593, -485)
+metadata/_edit_lock_ = true
 
 [node name="Projectiles" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("4_8t4p4")]
 position = Vector2(557, 544)

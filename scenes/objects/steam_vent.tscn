@@ -25,6 +25,8 @@ orbit_velocity_max = 0.0
 scale_max = 3.0
 color = Color(0.713726, 0.713726, 0.713726, 0.207843)
 color_ramp = SubResource("GradientTexture1D_hy61o")
+turbulence_enabled = true
+turbulence_noise_strength = 20.0
 
 [node name="SteamVent" type="StaticBody2D"]
 

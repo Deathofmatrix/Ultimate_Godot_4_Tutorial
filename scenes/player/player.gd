@@ -10,6 +10,7 @@ var can_laser: bool = true
 var can_grenade: bool = true
 var player_direction: Vector2 = Vector2.ZERO
 
+
 func _process(_delta):
 	# input 
 	direction = Input.get_vector("left", "right", "up", "down")

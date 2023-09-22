@@ -1,8 +1,9 @@
-[gd_scene load_steps=30 format=3 uid="uid://dcx1j46pfxbq0"]
+[gd_scene load_steps=31 format=3 uid="uid://dcx1j46pfxbq0"]
 
 [ext_resource type="Texture2D" uid="uid://cfq70f5uywl1t" path="res://graphics/tilesets/interior.png" id="1_475yr"]
 [ext_resource type="PackedScene" uid="uid://n5t5yc2f2svf" path="res://scenes/objects/simple_light.tscn" id="2_en5js"]
 [ext_resource type="PackedScene" uid="uid://bhjlro3ksidiw" path="res://scenes/objects/wall_light.tscn" id="3_ieru2"]
+[ext_resource type="PackedScene" uid="uid://ta8a31xgukek" path="res://scenes/objects/light_fan_animation.tscn" id="4_gl4y7"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xt02i"]
 polygon = PackedVector2Array(195, 24.375, -195, 24.375, -195, -24.375, 195, -24.375)
@@ -89,7 +90,7 @@ texture_region_size = Vector2i(390, 390)
 3:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_kob2d")
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
-3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-195, -195, 195, -195, 195, 195, -195, 195)
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-73.125, 195, 73.125, 195, 97.5, 121.875, 146.25, 73.125, 195, 73.125, 195, -73.125, 97.5, -73.125, 24.375, -24.375, -24.375, 24.375, -48.75, 73.125, -73.125, 146.25)
 4:0/0 = 0
 4:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_nvd47")
 4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -319,3 +320,12 @@ position = Vector2(2156, 270)
 
 [node name="SimpleLight3" parent="." instance=ExtResource("2_en5js")]
 position = Vector2(3856, 275)
+
+[node name="LightFanAnimation" parent="." instance=ExtResource("4_gl4y7")]
+position = Vector2(2180, 1010)
+
+[node name="LightFanAnimation2" parent="." instance=ExtResource("4_gl4y7")]
+position = Vector2(2180, 1742)
+
+[node name="LightFanAnimation3" parent="." instance=ExtResource("4_gl4y7")]
+position = Vector2(2180, 2485)
